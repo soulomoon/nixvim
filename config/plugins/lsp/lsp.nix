@@ -7,7 +7,7 @@
       enable = true;
       inlayHints = true;
       servers = {
-        haskell = {enable = true;};
+        hls = {enable = true;};
         html = {enable = true;};
         lua-ls = {enable = true;};
         nil-ls = {enable = true;};
