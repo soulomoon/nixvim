@@ -9,7 +9,7 @@ _: {
     disabledFiletypes = {
       statusline = ["startup" "alpha"];
     };
-    theme = "catppuccin";
+    theme = "onedark";
     sections = {
       lualine_a = [
         {
