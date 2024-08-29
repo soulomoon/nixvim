@@ -40,6 +40,7 @@ _: {
 
     # Git
     ./plugins/git/lazygit.nix
+    # ./plugins/git/onedark.nix
     ./plugins/git/gitsigns.nix
 
     # Utils
