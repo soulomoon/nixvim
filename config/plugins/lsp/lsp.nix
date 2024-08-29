@@ -18,8 +18,8 @@
         tsserver = {enable = true;};
         ansiblels = {enable = true;};
         jsonls = {enable = true;};
-        # helm-ls = {
-        #   enable = true;
+        helm-ls = {
+          enable = true;
         #   extraOptions = {
         #     settings = {
         #       "helm-ls" = {
@@ -29,7 +29,7 @@
         #       };
         #     };
         #   };
-        # };
+        };
         # yamlls = {
         #   enable = true;
         #   extraOptions = {
