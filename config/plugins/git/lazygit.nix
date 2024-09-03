@@ -15,6 +15,9 @@ in
     lazygit-nvim
     my-onedark-nvim
   ];
+  # colorschemes.onedark.enable = true;
+
+  # colorscheme = "onedark";
 
   extraConfigLua = ''
     require("telescope").load_extension("lazygit")

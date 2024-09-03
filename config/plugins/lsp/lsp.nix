@@ -7,7 +7,34 @@
       enable = true;
       inlayHints = true;
       servers = {
-        hls = {enable = true;};
+        hls = {
+          enable = true;
+          package=null;
+          cmd=["haskell-language-server-wrapper" "--lsp"];
+          settings = {
+              haskell = {
+                  plugin = {
+                    semanticTokens = {
+                      config = {
+                          classMethodToken= "method";
+                          classToken = "class";
+                          dataConstructorToken=  "enumMember";
+                          functionToken= "function";
+                          moduleToken= "namespace";
+                          patternSynonymToken= "macro";
+                          recordFieldToken= "property";
+                          typeConstructorToken= "enum";
+                          typeFamilyToken= "interface";
+                          typeSynonymToken= "type";
+                          typeVariableToken= "typeParameter";
+                          variableToken= "variable";
+                      };
+                      globalOn = true;
+                  };
+                };
+              };
+            };
+          };
         html = {enable = true;};
         lua-ls = {enable = true;};
         nil-ls = {enable = true;};
