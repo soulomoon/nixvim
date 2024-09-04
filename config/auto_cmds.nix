@@ -8,6 +8,17 @@
 
   autoCmd = [
     {
+      event = ["WinClosed"];
+      pattern = "*";
+      callback = {
+        __raw = ''
+          function()
+            vim.cmd('wincmd p')
+          end
+        '';
+      };
+    }
+    {
       group = "highlight_yank";
       event = ["TextYankPost"];
       pattern = "*";
